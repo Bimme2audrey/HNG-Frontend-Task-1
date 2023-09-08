@@ -29,17 +29,7 @@ h2{
 
 .row img{
 	border-radius: 50%;
-	width: 80px;
-	height: 80px;
 }
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px){
 	.row{
 		width: 100%;
