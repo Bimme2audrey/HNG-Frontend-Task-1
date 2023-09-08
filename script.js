@@ -1,21 +1,13 @@
-function checkTime(i) {
-	if (i < 10) {
-		i = "0" + i;
-	}
-	return i;
-}
+const desiredTime = new Date();
+desiredTime.setUTCHours(24);
+desiredTime.setUTCMinutes(1440);
+desiredTime.setUTCSeconds(86400);
+desiredTime.setUTCMilliseconds(0);
 
-function startTime() {
-	var today = new Date();
-	var h = today.getHours();
-	var m = today.getMinutes();
-	var s = today.getSeconds();
 
-	m = checkTime(m);
-	s = checkTime(s);
-	document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
-	t = setTimeout(function() {
-		startTime() }, 500);
-	}
+const timestamp = desiredTime.getTime();
 
-startTime();
+const timeElement = document.getElementById("time");
+timeElement.innerHTML = timestamp.toString();
+
+console.log(timestamp);
