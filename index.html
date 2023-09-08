@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>HNG INTERNSHIP</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<h2>TASK ONE</h2>
+    <head>
+      <title>Task One Frontend</title>
+      <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
 
-<div class="row">
+    <body>
+      <div class="view">
+        <h1 class="slack_name" data-testid="Bimme Audrey">Bimme Audrey</h1>
+        <img class="slack_image" src="./Images/Bimme.jpg" data-testid="slackDisplayImage" 
+             alt="Bimme Audrey" max-width="100rem" height="200rem">
+        <h2 class="slack_day" data-testid="currentDayOfTheWeek">Friday</h2>
+        <h2 class="slack_time" data-testid="currentUTCTime" id="time"></h2>
+        <h2 class="slack_track" data-testid="myTrack">Front-end</h2>
+        <a class="source_code_link" href="https://github.com/Bimme2audrey/HNG-Frontend-Task-1" target="_blank"
+        data-testid="githubURL">My Github URL</a>
+      </div>
 
-<h3>Slack Profile</h3>
-<img data-testid="slackDisplayImage" src="./Images/Bimme.jpg" alt="Bimme Audrey"  width="300">
+      <script src="script.js"></script>
+    </body>
 
-<h3>Slack User Name</h3>
-<p data-testid="slackUserName">Bimme Audrey</p>	
-</div>
-
-<div class="row">
-
-<h3>The day of the week</h3>
-<p data-testid="currentDayOfTheWeek">Friday</p>
-
-<h3>Time UTC</h3>
-<p data-testid="currentUTCTime" id="time"></p>
-
-<h3>My Track</h3>
-<p data-testid="myTrack">Frontend</p>
-<h3>Github URl</h3>
-<p><a data-testid="githubURL" href="https://github.com/Bimme2audrey/HNG-Frontend-Task-1" >Bimme's Github URL</a></p>
-</div>
-
-	<script src="script.js"></script>
-</body>
 </html>
