@@ -4,29 +4,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HNG INTERNSHIP</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<h2>TASK ONE</h2>
-
-<!--slack name-->
-	<p id="SlackUserName" style="display: none;">Bimme Audrey Zun</p>
-	<button type="button" onclick="document.getElementById('SlackUserName').style.display='block'">Display slack username</button> <br> <br>
-
+<div class="container">
+<div class="row">
 <!--slack profile-->
-	<img src="Images/hh.jpg" alt="Bimme Audrey" id="SlackDisplayImage" style="display:none;" width="300">
-	<button type="button" onclick="document.getElementById('SlackDisplayImage').style.display='block'">Showcase slack profile picture</button><br><br>
+<h3>Slack Profile</h3>
+<img src="./Images/Bimme.jpg" alt="Bimme Audrey" data-testid="slackDisplayImage" width="300">
+</div>
+
+<div class="row">
+<!--slack name-->
+<h3>Slack User Name</h3>
+<p data-testid="slackUserName">Bimme Audrey</p>	
+<!--Day-->
+<h3>The day of the week</h3>
+<p data-testid="currentDayOfTheWeek">Friday</p>
 <!--time-->
-	<button type="button" onclick="document.getElementById('CurrentUTCTime').innerHTML = Date()">Click me to display Date and Time</button>
-	<p id="CurrentUTCTime"></p><br>
+<h3>Time UTC</h3>
+<p data-testid="currentUTCTime" id="time"></p>
 <!--track-->
-	<p id="MyTrack" style="display: none;">Frontend Track</p>
-	<button type="button" onclick="document.getElementById('MyTrack').style.display='block'">Display my track</button> <br> <br>
-<!--github URL-->
-<p id="GithubURl" style="display: none;"><a href="https://github.com/Bimme2audrey/HNG-Frontend-Task-1">https://github.com/Bimme2audrey/HNG-Frontend-Task-1</p>
-	<button type="button" onclick="document.getElementById('GithubURl').style.display='block'">Display my github URl</button> <br> <br>
-
-
-
-
+<h3>My Track</h3>
+<p data-testid="myTrack">Frontend</p>
+<!--github URL -->
+<h3>Github URl</h3>
+<p><a href="https://github.com/Bimme2audrey/HNG-Frontend-Task-1"data-testid="githubURL" >Bimme's Github URL</p></a>
+	</div></div>
+	<script type="text/javascript" src="script.js" ></script>
 </body>
 </html>

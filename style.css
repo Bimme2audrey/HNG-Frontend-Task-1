@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #ead1a8;
+	font-family: monospace;
+}
+
+h2{
+	text-align: center;
+}
+
+.row{
+	width: 50%;
+	float: left;
+	padding:10px;
+	
+}
+
+.row a{
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+.row img{
+	border-radius: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+	.row{
+		width: 100%;
+		
+	}
+}
